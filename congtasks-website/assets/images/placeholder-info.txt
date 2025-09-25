@@ -1,0 +1,30 @@
+# HƯỚNG DẪN THÊM HÌNH ẢNH
+
+## Hiện tại website đang sử dụng placeholder image:
+https://via.placeholder.com/1200x400/f0f0f0/666666?text=CONG+TASKS+HERO+IMAGE
+
+## Để thêm hình ảnh thật:
+
+### Phương án 1: Thay thế URL trong HTML
+1. Tìm hình ảnh phù hợp (creative workspace, marketing team, etc.)
+2. Upload lên hosting (Imgur, CloudFront, v.v.)
+3. Thay thế URL trong file index.html
+
+### Phương án 2: Sử dụng file local
+1. Thêm file `hero-image.jpg` vào thư mục này
+2. Cập nhật đường dẫn trong HTML từ:
+   `https://via.placeholder.com/...` 
+   thành: `assets/images/hero-image.jpg`
+
+## Kích thước đề xuất:
+- **Width**: 1200px
+- **Height**: 400px  
+- **Format**: JPG hoặc PNG
+- **Chất lượng**: High resolution cho màn hình retina
+
+## Loại hình ảnh phù hợp:
+- Creative workspace / office
+- Marketing team working
+- Brand design elements
+- Modern office environment
+- Abstract creative background
