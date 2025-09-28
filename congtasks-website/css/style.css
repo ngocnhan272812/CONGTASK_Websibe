@@ -1529,7 +1529,7 @@ html {
 
 .photography-focuses {
     padding: 6rem 0;
-    background: linear-gradient(135deg, #f1f3f4 0%, #e8eaed 100%);
+    background: linear-gradient(135deg, #fff 0%, #fff 100%);
 }
 
 .photography-focuses h2 {
@@ -1573,6 +1573,100 @@ html {
     font-weight: 700;
     color: #000;
     margin-bottom: 0;
+}
+
+.mias-menu-project-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mias-menu-project-title h2 {
+    font-family: 'VNM Sans Std', Arial, sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #000;
+    margin-bottom: 0rem;
+    letter-spacing: -0.02em;
+}
+
+.mias-menu-project-title p {
+    font-family: 'Helvetica World', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+}
+
+.mias-menu-project-image {
+    margin: 3rem 0;
+}
+
+.mias-menu-project-image-row-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.mias-menu-project-image-row-1 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mias-menu-project-image-row-1 img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.mias-menu-project-image-row-2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.mias-menu-project-image-row-2 img {
+    width: auto;
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mias-menu-project-image-row-2 img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.mias-menu-project-image-row-3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.mias-menu-project-image-row-3 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mias-menu-project-image-row-3 img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .featured-projects {
@@ -2470,5 +2564,1082 @@ html {
 @media (max-width: 480px) {
     .haochi-project-solution-left img {
         height: 270px;
+    }
+}
+
+/* Responsive Design for MIAS Menu Project */
+@media (max-width: 768px) {
+    .mias-menu-project-title h2 {
+        font-size: 2rem;
+    }
+    
+    .mias-menu-project-title p {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+    
+    .mias-menu-project-image-row-1 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+    
+    .mias-menu-project-image-row-1 img {
+        height: 200px;
+    }
+    
+    .mias-menu-project-image-row-2 img {
+        height: 300px;
+    }
+    
+    .mias-menu-project-image-row-3 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+    
+    .mias-menu-project-image-row-3 img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mias-menu-project-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .mias-menu-project-image-row-1 {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .mias-menu-project-image-row-1 img {
+        height: 250px;
+    }
+    
+    .mias-menu-project-image-row-2 img {
+        height: 250px;
+    }
+    
+    .mias-menu-project-image-row-3 {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .mias-menu-project-image-row-3 img {
+        height: 250px;
+    }
+}
+
+/* Famiana Resort Project Styling */
+.famiana-resort-project {
+    padding: 6rem 0;
+    background: #ffffff;
+}
+
+.famiana-resort-project-content {
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    align-items: stretch;
+}
+
+.famiana-resort-project-content-collumn-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.famiana-resort-project-content-collumn-1 p:first-child {
+    font-family: 'VNM Sans Std', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+}
+
+.famiana-resort-project-content-collumn-1 .project-year {
+    font-size: 0.9rem;
+    color: #999;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.famiana-resort-project-content-collumn-1 p:last-of-type {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.famiana-resort-project-content-collumn-1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.famiana-resort-project-content-collumn-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0.3rem;
+    height: 100%;
+    align-content: space-between;
+}
+
+.famiana-resort-project-content-collumn-2 img:first-child {
+    grid-column: 1 / -1;
+}
+
+.famiana-resort-project-content-collumn-2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.famiana-resort-project-content-collumn-2 img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.famiana-resort-project-image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.famiana-resort-project-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.famiana-resort-project-image img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design for Famiana Resort Project */
+@media (max-width: 1024px) {
+    .famiana-resort-project {
+        padding: 5rem 0;
+    }
+    
+    .famiana-resort-project-content {
+        gap: 2.5rem;
+    }
+    
+    .famiana-resort-project-content-collumn-1 p:first-child {
+        font-size: 1.8rem;
+        white-space: normal;
+    }
+    
+    .famiana-resort-project-image {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.4rem;
+    }
+    
+    .famiana-resort-project-image img:first-child {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .famiana-resort-project {
+        padding: 4rem 0;
+    }
+    
+    .famiana-resort-project-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .famiana-resort-project-content-collumn-1 {
+        order: 1;
+    }
+    
+    .famiana-resort-project-content-collumn-2 {
+        order: 2;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.2rem;
+    }
+    
+    .famiana-resort-project-content-collumn-1 p:first-child {
+        font-size: 1.5rem;
+        white-space: normal;
+        text-align: center;
+    }
+    
+    .famiana-resort-project-content-collumn-1 .project-year {
+        text-align: center;
+    }
+    
+    .famiana-resort-project-content-collumn-1 p:last-of-type {
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .famiana-resort-project-content-collumn-1 img,
+    .famiana-resort-project-content-collumn-2 img {
+        height: auto;
+        min-height: 200px;
+        object-fit: cover;
+    }
+    
+    .famiana-resort-project-image {
+        grid-template-columns: 1fr;
+        gap: 0.3rem;
+        margin-top: 1.5rem;
+    }
+    
+    .famiana-resort-project-image img {
+        height: auto;
+        min-height: 200px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 640px) {
+    .famiana-resort-project {
+        padding: 3rem 0;
+    }
+    
+    .famiana-resort-project-content {
+        gap: 1.5rem;
+    }
+    
+    .famiana-resort-project-content-collumn-1 p:first-child {
+        font-size: 1.4rem;
+        line-height: 1.3;
+    }
+    
+    .famiana-resort-project-content-collumn-2 {
+        grid-template-columns: 1fr;
+        gap: 0.2rem;
+    }
+    
+    .famiana-resort-project-content-collumn-2 img:first-child {
+        grid-column: 1;
+    }
+    
+    .famiana-resort-project-image img {
+        min-height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .famiana-resort-project {
+        padding: 2.5rem 0;
+    }
+    
+    .famiana-resort-project-content {
+        gap: 1rem;
+    }
+    
+    .famiana-resort-project-content-collumn-1 p:first-child {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+    
+    .famiana-resort-project-content-collumn-1 .project-year {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .famiana-resort-project-content-collumn-1 p:last-of-type {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .famiana-resort-project-content-collumn-2 {
+        gap: 0.1rem;
+    }
+    
+    .famiana-resort-project-content-collumn-1 img,
+    .famiana-resort-project-content-collumn-2 img {
+        min-height: 150px;
+    }
+    
+    .famiana-resort-project-image {
+        margin-top: 1rem;
+        gap: 0.2rem;
+    }
+    
+    .famiana-resort-project-image img {
+        min-height: 150px;
+    }
+}
+
+@media (max-width: 320px) {
+    .famiana-resort-project-content-collumn-1 p:first-child {
+        font-size: 1.1rem;
+    }
+    
+    .famiana-resort-project-content-collumn-1 img,
+    .famiana-resort-project-content-collumn-2 img,
+    .famiana-resort-project-image img {
+        min-height: 120px;
+    }
+}
+
+/* Aman Cafe Menu Project Styling */
+.aman-cafe-menu-project {
+    padding: 6rem 0;
+    background: #f8f9fa;
+}
+
+.aman-cafe-menu-project-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    align-items: stretch;
+}
+
+.aman-cafe-menu-project-content-collumn-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aman-cafe-menu-project-content-collumn-1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aman-cafe-menu-project-content-collumn-1 img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.aman-cafe-menu-project-content-collumn-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.aman-cafe-menu-project-content-collumn-2 p:first-child {
+    font-family: 'VNM Sans Std', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 0.2rem;
+}
+
+.aman-cafe-menu-project-content-collumn-2 p:nth-child(2) {
+    font-family: 'VNM Sans Std', Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 1.5rem;
+    white-space: nowrap;
+}
+
+.aman-cafe-menu-project-content-collumn-2 p:nth-child(3) {
+    font-family: 'Helvetica World', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.aman-cafe-menu-project-content-collumn-2-image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.aman-cafe-menu-project-content-collumn-2-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aman-cafe-menu-project-content-collumn-2-image img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.aman-cafe-menu-project-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.aman-cafe-menu-project-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aman-cafe-menu-project-image img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design for Aman Cafe Menu Project */
+@media (max-width: 1024px) {
+    .aman-cafe-menu-project {
+        padding: 5rem 0;
+    }
+    
+    .aman-cafe-menu-project-content {
+        gap: 2.5rem;
+    }
+    
+    .aman-cafe-menu-project-content-collumn-2 p:nth-child(2) {
+        font-size: 2.2rem;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 768px) {
+    .aman-cafe-menu-project {
+        padding: 4rem 0;
+    }
+    
+    .aman-cafe-menu-project-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .aman-cafe-menu-project-content-collumn-2 {
+        order: 1;
+    }
+    
+    .aman-cafe-menu-project-content-collumn-1 {
+        order: 2;
+    }
+    
+    .aman-cafe-menu-project-content-collumn-2 p:first-child {
+        text-align: center;
+    }
+    
+    .aman-cafe-menu-project-content-collumn-2 p:nth-child(2) {
+        font-size: 2rem;
+        text-align: center;
+        white-space: normal;
+    }
+    
+    .aman-cafe-menu-project-content-collumn-2 p:nth-child(3) {
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .aman-cafe-menu-project-content-collumn-2-image {
+        grid-template-columns: 1fr;
+        gap: 0.3rem;
+    }
+    
+    .aman-cafe-menu-project-image {
+        grid-template-columns: 1fr;
+        gap: 0.3rem;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .aman-cafe-menu-project {
+        padding: 3rem 0;
+    }
+    
+    .aman-cafe-menu-project-content {
+        gap: 1.5rem;
+    }
+    
+    .aman-cafe-menu-project-content-collumn-2 p:nth-child(2) {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+    
+    .aman-cafe-menu-project-content-collumn-2-image {
+        gap: 0.2rem;
+    }
+    
+    .aman-cafe-menu-project-image {
+        gap: 0.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .aman-cafe-menu-project {
+        padding: 2.5rem 0;
+    }
+    
+    .aman-cafe-menu-project-content {
+        gap: 1rem;
+    }
+    
+    .aman-cafe-menu-project-content-collumn-2 p:first-child {
+        font-size: 1rem;
+    }
+    
+    .aman-cafe-menu-project-content-collumn-2 p:nth-child(2) {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+    
+    .aman-cafe-menu-project-content-collumn-2 p:nth-child(3) {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .aman-cafe-menu-project-content-collumn-2-image {
+        gap: 0.1rem;
+    }
+    
+    .aman-cafe-menu-project-image {
+        margin-top: 1rem;
+        gap: 0.1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .aman-cafe-menu-project-content-collumn-2 p:nth-child(2) {
+        font-size: 1.3rem;
+    }
+}
+
+/* Solaria Hotel Project Styling */
+.solaria-hotel-project {
+    padding: 6rem 0;
+    background: #ffffff;
+}
+
+.solaria-hotel-project-title {
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.solaria-hotel-project-title p:first-child {
+    font-family: 'VNM Sans Std', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 0.2rem;
+}
+
+.solaria-hotel-project-title p:nth-child(2) {
+    font-family: 'VNM Sans Std', Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 1.5rem;
+    white-space: nowrap;
+}
+
+.solaria-hotel-project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.solaria-hotel-project-content-key {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.solaria-hotel-project-content-key img {
+    flex: 2;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solaria-hotel-project-content-key img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.solaria-hotel-project-content-key p {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'VNM Sans Std', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    letter-spacing: 1px;
+    white-space: pre-line;
+    padding: 1rem;
+    background: rgba(248, 249, 250, 0.5);
+    line-height: 1.3;
+    height: 300px;
+}
+
+.solaria-hotel-project-content blockquote {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-left: 4px solid #000;
+}
+
+.solaria-hotel-project-content blockquote p {
+    font-family: 'Helvetica World', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+.solaria-hotel-project-content-image {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+    margin-top: 2rem;
+}
+
+.solaria-hotel-project-content-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: none;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.solaria-hotel-project-content-image img:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive Design for Solaria Hotel Project */
+@media (max-width: 1024px) {
+    .solaria-hotel-project {
+        padding: 5rem 0;
+    }
+    
+    .solaria-hotel-project-title p:nth-child(2) {
+        font-size: 2.2rem;
+        white-space: normal;
+    }
+    
+    .solaria-hotel-project-content-key {
+        max-width: 800px;
+        gap: 1rem;
+    }
+    
+    .solaria-hotel-project-content-key img {
+        height: 250px;
+    }
+    
+    .solaria-hotel-project-content-key p {
+        font-size: 2.1rem;
+        height: 250px;
+        letter-spacing: 1px;
+    }
+    
+    .solaria-hotel-project-content-image {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+    
+    .solaria-hotel-project-content-image img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .solaria-hotel-project {
+        padding: 4rem 0;
+    }
+    
+    .solaria-hotel-project-title p:nth-child(2) {
+        font-size: 2rem;
+        white-space: normal;
+    }
+    
+    .solaria-hotel-project-content-key {
+        flex-direction: column;
+        gap: 1.5rem;
+        max-width: 100%;
+    }
+    
+    .solaria-hotel-project-content-key img {
+        flex: none;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .solaria-hotel-project-content-key p {
+        flex: none;
+        font-size: 1.3rem;
+        white-space: pre-line;
+        padding: 1.5rem;
+        line-height: 1.3;
+        height: auto;
+        background: rgba(248, 249, 250, 0.8);
+    }
+    
+    .solaria-hotel-project-content blockquote p {
+        font-size: 1.1rem;
+    }
+    
+    .solaria-hotel-project-content-image {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 0;
+    }
+    
+    .solaria-hotel-project-content-image img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 640px) {
+    .solaria-hotel-project {
+        padding: 3rem 0;
+    }
+    
+    .solaria-hotel-project-title p:first-child {
+        font-size: 1.1rem;
+    }
+    
+    .solaria-hotel-project-title p:nth-child(2) {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+    
+    .solaria-hotel-project-content-key p {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        line-height: 1.3;
+        padding: 1rem;
+    }
+    
+    .solaria-hotel-project-content-image {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 0;
+    }
+    
+    .solaria-hotel-project-content-image img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .solaria-hotel-project {
+        padding: 2.5rem 0;
+    }
+    
+    .solaria-hotel-project-title p:first-child {
+        font-size: 1rem;
+    }
+    
+    .solaria-hotel-project-title p:nth-child(2) {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+    
+    .solaria-hotel-project-content blockquote {
+        padding: 1.5rem;
+    }
+    
+    .solaria-hotel-project-content blockquote p {
+        font-size: 1rem;
+    }
+    
+    .solaria-hotel-project-content-image {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        gap: 0;
+    }
+    
+    .solaria-hotel-project-content-image img {
+        height: 160px;
+    }
+}
+
+@media (max-width: 320px) {
+    .solaria-hotel-project-title p:nth-child(2) {
+        font-size: 1.3rem;
+    }
+}
+
+/* Almin Hotel Photography Styling */
+.almin-hotel-photography {
+    padding: 6rem 0;
+    background: #f8f9fa;
+}
+
+.almin-hotel-photography-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.almin-hotel-photography-title p:first-child {
+    font-family: 'VNM Sans Std', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 0.2rem;
+}
+
+.almin-hotel-photography-title p:nth-child(2) {
+    font-family: 'VNM Sans Std', Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 1.5rem;
+    white-space: nowrap;
+}
+
+.almin-hotel-photography-title p:nth-child(3) {
+    font-family: 'Helvetica World', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.almin-hotel-photography-image {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.almin-hotel-photography-image-row-1,
+.almin-hotel-photography-image-row-3,
+.almin-hotel-photography-image-row-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.almin-hotel-photography-image-row-2,
+.almin-hotel-photography-image-row-5 {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.almin-hotel-photography-image-row-2 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.almin-hotel-photography-image-row-5 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.almin-hotel-photography-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.almin-hotel-photography-image-row-1 img,
+.almin-hotel-photography-image-row-3 img,
+.almin-hotel-photography-image-row-4 img {
+    max-width: auto;
+}
+
+.almin-hotel-photography-image img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design for Almin Hotel Photography */
+@media (max-width: 1024px) {
+    .almin-hotel-photography {
+        padding: 5rem 0;
+    }
+    
+    .almin-hotel-photography-title p:nth-child(2) {
+        font-size: 2.2rem;
+        white-space: normal;
+    }
+    
+    .almin-hotel-photography-image-row-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .almin-hotel-photography-image-row-5 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .almin-hotel-photography-image img {
+        height: 220px;
+    }
+    
+    .almin-hotel-photography-image-row-1 img,
+    .almin-hotel-photography-image-row-3 img,
+    .almin-hotel-photography-image-row-4 img {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .almin-hotel-photography {
+        padding: 4rem 0;
+    }
+    
+    .almin-hotel-photography-title p:nth-child(2) {
+        font-size: 2rem;
+        white-space: normal;
+    }
+    
+    .almin-hotel-photography-title p:nth-child(3) {
+        text-align: left;
+        font-size: 1rem;
+    }
+    
+    .almin-hotel-photography-image {
+        gap: 0.8rem;
+    }
+    
+    .almin-hotel-photography-image-row-2,
+    .almin-hotel-photography-image-row-5 {
+        gap: 0.3rem;
+    }
+    
+    .almin-hotel-photography-image-row-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .almin-hotel-photography-image-row-5 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .almin-hotel-photography-image img {
+        height: 200px;
+    }
+    
+    .almin-hotel-photography-image-row-1 img,
+    .almin-hotel-photography-image-row-3 img,
+    .almin-hotel-photography-image-row-4 img {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 640px) {
+    .almin-hotel-photography {
+        padding: 3rem 0;
+    }
+    
+    .almin-hotel-photography-title p:first-child {
+        font-size: 1.1rem;
+    }
+    
+    .almin-hotel-photography-title p:nth-child(2) {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+    
+    .almin-hotel-photography-title p:nth-child(3) {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .almin-hotel-photography-image {
+        gap: 0.6rem;
+    }
+    
+    .almin-hotel-photography-image-row-2,
+    .almin-hotel-photography-image-row-5 {
+        gap: 0.2rem;
+    }
+    
+    .almin-hotel-photography-image-row-2,
+    .almin-hotel-photography-image-row-5 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .almin-hotel-photography-image img {
+        height: 180px;
+    }
+    
+    .almin-hotel-photography-image-row-1 img,
+    .almin-hotel-photography-image-row-3 img,
+    .almin-hotel-photography-image-row-4 img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .almin-hotel-photography {
+        padding: 2.5rem 0;
+    }
+    
+    .almin-hotel-photography-title p:first-child {
+        font-size: 1rem;
+    }
+    
+    .almin-hotel-photography-title p:nth-child(2) {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+    
+    .almin-hotel-photography-title p:nth-child(3) {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .almin-hotel-photography-image {
+        gap: 0.5rem;
+    }
+    
+    .almin-hotel-photography-image-row-2,
+    .almin-hotel-photography-image-row-5 {
+        grid-template-columns: 1fr;
+        gap: 0.1rem;
+    }
+    
+    .almin-hotel-photography-image img {
+        height: 160px;
+    }
+    
+    .almin-hotel-photography-image-row-1 img,
+    .almin-hotel-photography-image-row-3 img,
+    .almin-hotel-photography-image-row-4 img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .almin-hotel-photography-title p:nth-child(2) {
+        font-size: 1.3rem;
     }
 }
